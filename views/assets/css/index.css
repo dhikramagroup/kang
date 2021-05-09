@@ -23,12 +23,61 @@ main .carousel .bg-text {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
-  width: 80%;
+  width: 40%;
   padding: 20px;
-  text-align: center;
 }
 
-main .carousel .bg-text :nth-child(2) {
+main .carousel .bg-text .extra-text {
+  display: flex;
   color: goldenrod;
+  border-bottom: gray 1px solid;
+}
+
+main .carousel .bg-text .extra-text p {
+  border-bottom: goldenrod solid 2px;
+  padding-bottom: 5px;
+}
+
+main .carousel .bg-text .desc-text {
+  display: grid;
+  justify-content: start;
+}
+
+main .carousel .bg-text .desc-text h1 {
+  font-size: 1.6em;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+main .carousel .bg-text .desc-text p {
+  color: #a59e9e;
+}
+
+main .carousel .bg-text .button {
+  margin-top: 20px;
+}
+
+main .carousel .bg-text .button a {
+  text-decoration: none;
+  padding: 5px 15px 5px 15px;
+  background-color: goldenrod;
+  color: black;
+}
+
+main .icon-services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  align-items: center;
+  height: 200px;
+  max-width: 1280px;
+}
+
+main .icon-services .services {
+  display: flex;
+}
+
+main .icon-services .services img {
+  margin-right: 20px;
 }
 /*# sourceMappingURL=index.css.map */
