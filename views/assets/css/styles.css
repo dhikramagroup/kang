@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+header .extra-header {
+  width: 100%;
+  padding: 5px 0 5px 0;
+  background-color: lightgray;
+  display: flex;
+  justify-content: space-between;
+}
+
+header .extra-header .extra {
+  max-width: 1280px;
+  color: black;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+header .heading {
+  align-items: center;
+  display: grid;
+  grid-template-columns: .7fr 1fr auto;
+  justify-content: space-between;
+  height: 110px;
+  padding-right: 20px;
+  padding-left: 20px;
+  max-width: 1280px;
+}
+
+header .heading .logo-dhikrama {
+  display: flex;
+  align-items: center;
+}
+
+header .heading .logo-dhikrama .logo {
+  height: 35px;
+  width: 60px;
+  border-radius: 0 25px 0 25px;
+  background-color: goldenrod;
+}
+
+header .heading .logo-dhikrama .text-logo {
+  margin-left: 10px;
+  font-size: larger;
+}
+
+header .heading .information-contact {
+  border-right: gray solid 1px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+header .heading .information-contact .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .heading .information-contact .icon .image {
+  height: 50px;
+  width: 50px;
+}
+
+header .heading .information-contact .icon .image img {
+  background-size: cover;
+  padding: 5px;
+  fill: #fce57e;
+}
+
+header .heading .information-contact .icon .image img:hover {
+  color: black;
+}
+
+header .heading .information-contact .icon .description {
+  margin-right: 10px;
+}
+
+header .heading .information-contact .icon .description .desc1 {
+  color: black;
+}
+
+header .heading .information-contact .icon .description .desc2 {
+  font-size: .8em;
+  color: #5f5e5e;
+}
+
+header .heading .social-media {
+  margin-left: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: skyblue;
+  top: 120px;
+  height: 40px;
+  right: 35%;
+  width: 30%;
+  padding-left: 22px;
+  padding-right: 20px;
+  border-radius: 5px;
+  z-index: 2;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+
+header nav li a {
+  text-decoration: none;
+  color: white;
+  padding: 10.7px 15px 10.7px 15px;
+  border-radius: 5px;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+header nav li a:hover {
+  color: black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+header nav li .active {
+  color: black;
+  background-color: goldenrod;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/*# sourceMappingURL=styles.css.map */
