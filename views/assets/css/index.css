@@ -85,6 +85,17 @@ main .section-services {
   margin-top: 50px;
 }
 
+main .section-services .title-services {
+  border-bottom: gray solid 1px;
+  margin: 0 40px 20px 40px;
+}
+
+main .section-services .title-services h2 {
+  border-bottom: goldenrod solid 2px;
+  width: 250px;
+  padding-bottom: 10px;
+}
+
 main .section-services .services-content {
   max-width: 1280px;
   display: grid;
@@ -96,10 +107,12 @@ main .section-services .services-content {
 
 main .section-services .services-content .content img {
   background-size: cover;
+  fill: goldenrod;
 }
 
 main .section-services .services-content .content h3 {
   color: black;
+  margin-bottom: 15px;
 }
 
 main .section-services .services-content .content p {
@@ -119,7 +132,15 @@ main .section-services .services-content .second-content .sec-content {
   display: flex;
 }
 
+main .section-services .services-content .second-content .sec-content .sec-desc {
+  margin-left: 10px;
+}
+
 main .section-services .services-content .second-content .sec-content .sec-desc h2 {
   color: goldenrod;
+}
+
+main .section-services .services-content .second-content .sec-content .sec-desc p {
+  margin-top: 7px;
 }
 /*# sourceMappingURL=index.css.map */
