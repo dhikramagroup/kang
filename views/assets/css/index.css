@@ -80,4 +80,46 @@ main .icon-services .services {
 main .icon-services .services img {
   margin-right: 20px;
 }
+
+main .section-services {
+  margin-top: 50px;
+}
+
+main .section-services .services-content {
+  max-width: 1280px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.5fr;
+  margin-right: 40px;
+  margin-left: 40px;
+  gap: 20px;
+}
+
+main .section-services .services-content .content img {
+  background-size: cover;
+}
+
+main .section-services .services-content .content h3 {
+  color: black;
+}
+
+main .section-services .services-content .content p {
+  color: grey;
+}
+
+main .section-services .services-content .content .read-more {
+  margin-top: 10px;
+}
+
+main .section-services .services-content .second-content {
+  display: grid;
+  gap: 20px;
+}
+
+main .section-services .services-content .second-content .sec-content {
+  display: flex;
+}
+
+main .section-services .services-content .second-content .sec-content .sec-desc h2 {
+  color: goldenrod;
+}
 /*# sourceMappingURL=index.css.map */
