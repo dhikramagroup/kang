@@ -1,5 +1,6 @@
 main{
     display: grid;
+    width: 100%;
 }
 
 /* carousel */
@@ -20,7 +21,7 @@ main{
 
 
 /* responsive design */
-@media screen and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
 
     .carousel{
         height: max-content;
@@ -50,24 +51,74 @@ main{
 
     /* icon Services */
     .icon-services{
-        margin-top: 40px;
         padding-left: 20px;
+        margin-bottom: 20px;
+    }
+
+    .icon-services .services{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
     }
 
 
     /* section services */
     .section-services{
-
+        margin-top: 20px;
     }
 
-    .services-content img{
+    .section-services .title-services{
+        border-bottom: 1px solid var(--secondary-text);
+        margin-bottom: 20px;
+    }
+
+    .title-services h2{
+        padding-bottom: 10px;
+        border-bottom: 2px solid var(--primary-color);
+        width: 40%;
+    }
+
+    
+    .services-content{
+       width: fit-content;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .content img{
         width: 100vw;
         height: auto;
+        background-size: cover;
+    }
+
+    .second-content{
+        width: 100vw;
+        display: grid;
+        grid-template-columns:  1fr 1fr;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .sec-content{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .sec-content img{
+        width: 100%;
+        height: auto;
+    }
+
+    .sec-desc{
+        margin-top: 5px;
+        margin-bottom: 40px;
     }
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 
     .carousel{
         height: max-content;
@@ -84,6 +135,14 @@ main{
 
     .extra-text{
         color: var(--primary-color);
+        border-bottom: var(--secondary-text) solid 1px ;
+    }
+
+    .extra-text p{
+        padding-bottom: 10px;
+        width: 35%;
+        border-bottom: var(--primary-color) solid 2px;
+
     }
 
     .desc-text{
@@ -104,7 +163,26 @@ main{
 
     /* section services */
     .section-services{
+        margin-top: 20px;
+    }
 
+    .section-services .title-services{
+        border-bottom: 1px solid var(--secondary-text);
+        margin-bottom: 20px;
+    }
+
+    .title-services h2{
+        padding-bottom: 10px;
+        border-bottom: 2px solid var(--primary-color);
+        width: 40%;
+    }
+
+    .services-content{
+        margin-bottom: 20px;
+    }
+
+    .content{
+        margin-bottom: 20px;
     }
 
     .services-content img{

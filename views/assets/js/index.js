@@ -14,6 +14,8 @@ window.onload = function () {
 
 function myFunction(x) {
     const nav = document.querySelector("nav")
+    const body = document.querySelector("body")
     x.classList.toggle("change");
     nav.classList.toggle("slide")
+    body.classList.toggle("body")
 }
