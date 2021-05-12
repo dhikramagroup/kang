@@ -1,146 +1,116 @@
-main .carousel {
-  overflow: hidden;
+main{
+    display: grid;
 }
 
-main .carousel img {
-  background-size: cover;
-  max-width: 100%;
-  height: auto;
-  filter: blur(3px);
-  -webkit-filter: blur(3px);
+/* carousel */
+.carousel{
+
 }
 
-main .carousel .bg-text {
-  background-color: black;
-  /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4);
-  /* Black w/opacity/see-through */
-  color: white;
-  font-weight: bold;
-  border: 1px solid #f1f1f1;
-  position: absolute;
-  top: 400px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  width: 40%;
-  padding: 20px;
+.carousel img{
+    width: 100vw;
+    height: auto;
 }
 
-main .carousel .bg-text .extra-text {
-  display: flex;
-  color: goldenrod;
-  border-bottom: gray 1px solid;
+/* icon Services */
+.icon-services{}
+
+/* section services */
+.section-services{}
+
+
+/* responsive design */
+@media screen and (max-width: 1024px) {
+
+    .carousel{
+        height: max-content;
+    }
+
+    .carousel-text{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        display: inline-block;
+        height: 150px;
+    }
+
+    .extra-text{
+        color: var(--primary-color);
+    }
+
+    .desc-text{
+        margin-bottom: 20px;
+    }
+
+    .desc-text h1{
+        font-size: 1.5em;
+        margin-bottom: 5px;
+    }
+
+    /* icon Services */
+    .icon-services{
+        margin-top: 40px;
+        padding-left: 20px;
+    }
+
+
+    /* section services */
+    .section-services{
+
+    }
+
+    .services-content img{
+        width: 100vw;
+        height: auto;
+    }
+
 }
 
-main .carousel .bg-text .extra-text p {
-  border-bottom: goldenrod solid 2px;
-  padding-bottom: 5px;
-}
+@media screen and (max-width: 768px) {
 
-main .carousel .bg-text .desc-text {
-  display: grid;
-  justify-content: start;
-}
+    .carousel{
+        height: max-content;
+    }
 
-main .carousel .bg-text .desc-text h1 {
-  font-size: 1.6em;
-  padding-bottom: 5px;
-  padding-top: 5px;
-}
+    .carousel-text{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        display: inline-block;
+        height: 150px;
+    }
 
-main .carousel .bg-text .desc-text p {
-  color: #a59e9e;
-}
+    .extra-text{
+        color: var(--primary-color);
+    }
 
-main .carousel .bg-text .button {
-  margin-top: 20px;
-}
+    .desc-text{
+        margin-bottom: 20px;
+    }
 
-main .carousel .bg-text .button a {
-  text-decoration: none;
-  padding: 5px 15px 5px 15px;
-  background-color: goldenrod;
-  color: black;
-}
+    .desc-text h1{
+        font-size: 1.5em;
+        margin-bottom: 5px;
+    }
 
-main .icon-services {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-content: space-between;
-  align-items: center;
-  height: 200px;
-  max-width: 1280px;
-}
+    /* icon Services */
+    .icon-services{
+        margin-top: 40px;
+        padding-left: 20px;
+    }
 
-main .icon-services .services {
-  display: flex;
-}
 
-main .icon-services .services img {
-  margin-right: 20px;
-}
+    /* section services */
+    .section-services{
 
-main .section-services {
-  margin-top: 50px;
-}
+    }
 
-main .section-services .title-services {
-  border-bottom: gray solid 1px;
-  margin: 0 40px 20px 40px;
-}
+    .services-content img{
+        width: 100vw;
+        height: auto;
+    }
 
-main .section-services .title-services h2 {
-  border-bottom: goldenrod solid 2px;
-  width: 250px;
-  padding-bottom: 10px;
-}
 
-main .section-services .services-content {
-  max-width: 1280px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1.5fr;
-  margin-right: 40px;
-  margin-left: 40px;
-  gap: 20px;
 }
-
-main .section-services .services-content .content img {
-  background-size: cover;
-  fill: goldenrod;
-}
-
-main .section-services .services-content .content h3 {
-  color: black;
-  margin-bottom: 15px;
-}
-
-main .section-services .services-content .content p {
-  color: grey;
-}
-
-main .section-services .services-content .content .read-more {
-  margin-top: 10px;
-}
-
-main .section-services .services-content .second-content {
-  display: grid;
-  gap: 20px;
-}
-
-main .section-services .services-content .second-content .sec-content {
-  display: flex;
-}
-
-main .section-services .services-content .second-content .sec-content .sec-desc {
-  margin-left: 10px;
-}
-
-main .section-services .services-content .second-content .sec-content .sec-desc h2 {
-  color: goldenrod;
-}
-
-main .section-services .services-content .second-content .sec-content .sec-desc p {
-  margin-top: 7px;
-}
-/*# sourceMappingURL=index.css.map */

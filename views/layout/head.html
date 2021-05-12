@@ -8,20 +8,6 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/index.css">
     <title>title</title>
-       <script>
-        window.onload = function () {
-            var all_links = document.getElementById("nav").getElementsByTagName("a"),
-                i = 0, len = all_links.length,
-                full_path = location.href.split('#')[0]; //Ignore hashes?
-
-            // Loop through each link.
-            for (; i < len; i++) {
-                if (all_links[i].href.split("#")[0] == full_path) {
-                    all_links[i].className += " active";
-                }
-            }
-        }
-    </script>
 </head>
 
 <body>
