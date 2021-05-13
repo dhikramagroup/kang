@@ -17,20 +17,20 @@ func main() {
 	app.Get("/", func(c *fiber.Ctx) error {
 		// Render index template
 		return c.Render("index", fiber.Map{
-			"Title": "Hello, World!",
+			"Title": "Jasa tukang bangun rumah!",
 		})
 	})
 	app.Get("/about", func(c *fiber.Ctx) error {
 		// Render index template
 		return c.Render("about", fiber.Map{
-			"Title": "Hello, World!",
+			"Title": "Tentang kang bangunan!",
 		})
 	})
 
 	app.Get("/contact-us", func(c *fiber.Ctx) error {
 		// Render index template
 		return c.Render("contact", fiber.Map{
-			"Title": "Hello, World!",
+			"Title": "Kontak kang bangunan!",
 		})
 	})
 
